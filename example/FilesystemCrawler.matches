@@ -1,0 +1,28 @@
+# A list of gitignore-like patterns to match directories and files.
+# The pattern starts always with '/' on top of the base directory. Flags can be added before the first '/'
+#
+# Flags:
+# 'r' use regex pattern instead of gitignore-like pattern.
+# '!' or 'i' to negate matches.
+# 'd' match directories only.
+# 'f' match files only.
+#
+# gitignore -> http://git-scm.com/docs/gitignore
+# regex -> https://docs.python.org/3.4/library/re.html
+#
+# A content regex pattern can be added after the path pattern. The patterns should be separated by a tab of four spaces 
+#
+# Examples:
+# '/**' to match all files and directories(using a gitignore-like pattern)
+# 'r/.*' to match all files and directories (using a regex pattern) 
+# 'f/**' to match all files (using a gitignore-like pattern)
+# 'rd/.*' to match all directories (using a regex pattern)
+# '!d/**' unmatch directories previously matched
+# '/**    Sputnik' to match all files with the work 'Sputnik'
+
+# matches 'doesnt match.txt' and 'match.txt'
+/*match*
+# unmatches 'doesnt match.txt'
+i/*doesnt match*
+# matches valid content.txt
+/*    matching text
