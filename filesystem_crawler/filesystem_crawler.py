@@ -7,7 +7,7 @@ class FilesystemCrawler:
         self.matchRules = matchRules
         self.matchCallback = matchCallback
 
-    def search(self, topdir, ignoreMatchedDirSubtree=True):
+    def search(self, topdir, ignoreMatchedDirSubtree=False):
         matchedPaths = []
         for dirpath, __, filenames in os.walk(topdir, topdown=True):
             # append directories

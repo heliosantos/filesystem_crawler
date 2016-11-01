@@ -11,7 +11,7 @@ with open('LICENSE') as f:
 
 setup(
     name='filesystem_crawler',
-    version='1.1.4',
+    version='1.1.5',
     description='Search for files or directories that match a set of rules',
     long_description=readme,
     author='Hélio Santos',
